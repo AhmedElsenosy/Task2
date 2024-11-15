@@ -35,7 +35,7 @@ namespace Tesk2
             Console.Write("Enter the phone number to search for the contact: ");
             string phone = Console.ReadLine();
 
-            User contact = contacts.Find(a => a.PhoneNumber == phone);
+            User contact = contacts.FirstOrDefault(a => a.PhoneNumber == phone);
 
             if (contact != null)
             {
@@ -61,7 +61,7 @@ namespace Tesk2
             Console.Write("Enter the Phone Number to search for the contact: ");
             string phone = Console.ReadLine();
 
-            User contact = contacts.Find(a => a.PhoneNumber == phone);
+            User contact = contacts.FirstOrDefault(a => a.PhoneNumber == phone);
 
             if (contact != null)
             {
